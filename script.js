@@ -104,7 +104,7 @@ function handleOptionSelect(choice) {
         selectedOption = choice;
         addMessage("You selected: " + durations[choice] + " extension for ₹" + prices[choice].toLocaleString() + ".00");
         showDeclaration();
-    } else {
+    else {
         addMessage("Invalid choice. Please select a valid option:");
         showWarrantyOptions();
     }
