@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Warranty Extension</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔧 AC Extended Warranty Support</h1>
+            <p>Extend warranty for your AC (up to 2 Ton)</p>
+        </header>
+
+        <div id="chat-container">
+            <div id="chat-messages">
+                <div class="message bot-message">
+                    Hello! Welcome to AC Extended Warranty Support. I'm here to help you extend your AC warranty.
+                </div>
+                <div class="message bot-message">
+                    Please enter your AC's purchase date (DD-MM-YYYY format):
+                </div>
+            </div>
+
+            <div class="input-section">
+                <input type="text" id="user-input" placeholder="Type your answer here..." onkeypress="handleKeyPress(event)">
+                <button onclick="processInput()">Send</button>
+            </div>
+        </div>
+
+        <div id="payment-section" style="display: none;">
+            <h3>💳 Payment Instructions</h3>
+            <div id="payment-details"></div>
+            <button onclick="verifyPayment()">I've Completed Payment</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
